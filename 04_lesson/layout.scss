@@ -1,0 +1,121 @@
+$barva_menu-over: #333;
+$max_width: 1220px;
+.wrapper{
+  width: auto;
+  max-width: $max_width;
+  margin: 0 auto;}
+
+*[class*="large"]{
+  float: left;
+  display: inline;
+  margin-right: 3%;
+  border: 1px solid red;
+  background: #f1f1f1;}
+
+.row{clear: both; padding: 0}
+.vertical{}
+
+//  3 percent between first and second column, column has 5.5%
+.large1{width: 5.5%;}
+.large2{width: 14%;}
+.large3{width: 22.5%}
+.large4{width: 31%}
+.large5{width: 39.5%}
+.large6{width: 48%}
+.large7{width: 56.5%}
+.large8{width: 65%}
+.large9{width: 73.5%}
+.large10{width: 82%}
+.large11{width: 90.5%}
+.large12{width: 99%; margin: 0}
+
+*[class*="large"].first {
+  margin-left: 0;
+}
+*[class*="large"].last {
+  margin-right: 0;
+}
+
+@media all and (max-width: 768px){
+  *[class*="large"]{
+    float:none!important;
+    width: 100%;
+  }
+}
+
+
+@media all and (max-width: 480px){
+  *[class*="large"]{
+    float:none!important;
+    width: 100%;
+  }
+}
+
+// MENU
+nav{
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none; // odstrani cudliky u seznamu
+    li{
+      float: left;    // posune list item doleva, zarovna
+      padding: 10px;
+      position: relative;
+      a{
+        width: 100%;
+        display: block;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      ul{
+        display: none; // druhou uroven v li schovam
+        position: absolute;
+        top: 30px;
+        left: 0;
+      }
+      ul ul{display: none!important;} //treti uroven
+    }
+
+    li:hover{ // kdyz na ni das mysitko
+      background: $barva_menu-over;
+      a{color: #f1f1f1}
+      ul{
+        display: block;
+        background: $barva_menu-over;
+        li{
+          min-width: 150px;
+          float: none!important;
+        }
+        li:hover{ // treti uroven
+          background-color: rgba(0,200,200,0.3);
+          ul{
+            display: block!important;
+            left: 100%;
+            top: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+.mobile-menu{display: none;}
+
+@media all and (max-width: 768px){
+  .mobile-menu{display: block;}
+  nav{display: none;}
+  nav{
+    background: $barva_menu-over;
+    a{color: white;}
+    li{
+      padding-bottom: 0%;
+      float:none!important;
+      ul{
+        display: block!important;
+        position: inherit!important;
+        top:0%;
+      }
+    }
+  }
+}
