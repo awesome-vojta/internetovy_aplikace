@@ -140,3 +140,34 @@ nav{
     }
   }
 }
+
+
+
+// ---------------------04 LESSON---------------------
+
+
+//tzv mixin, jak udelame border radius??
+// umozni vlozit atributy do trid
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+//Top button
+#myBtn {
+  //display: none;
+  position: fixed;
+  padding: 5px 10px;
+  right: 10px;
+  bottom: 10px;
+  background: $barva_menu-over;
+  color: #fff;
+  font-size: 30px;
+  @include border-radius(10px)
+}
+
+.fixedcont{
+  position: top;
+}
+

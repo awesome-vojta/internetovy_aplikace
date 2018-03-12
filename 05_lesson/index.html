@@ -10,11 +10,15 @@
     <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--<style type="text/css" href="layout.css"></style>-->
+    <style type="text/css" href="layout.css"></style>
 </head>
 <body>
 
 <header>
+
+
+
+
     <a href="#" id="touch-menu" class="mobile-menu">MENU<i class="fa fa-user"></i></a>
     <nav>
         <ul>
@@ -48,6 +52,12 @@
     <div class="row">
         <div class="large12 first last">
             <h1>Nadpis</h1>
+    <!--FARMA ODKAZU-->
+            <div class="fixedblock">
+                <a href="#pos1" class="fixedblock">First</a>
+                <a href="#pos2" class="fixedblock">Second</a>
+                <a href="#pos3" class="fixedblock">Third</a>
+            </div>
         </div>
     </div>
 
@@ -88,7 +98,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="pos1">
         <div class="large6 first">
             <p>Bushwick lomo cornhole typewriter edison bulb adaptogen organic etsy irony meditation.
 
@@ -111,7 +121,7 @@
             polaroid YOLO dreamcatcher ennui.</p></div>
     </div>
 
-    <div class="row">
+    <div class="row" id="pos2">
         <div class="large9 first">
             <p>Bushwick lomo cornhole typewriter edison bulb adaptogen organic etsy irony meditation.
 
@@ -138,6 +148,6 @@
         </div>
     </div>
 </div>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>

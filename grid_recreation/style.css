@@ -1,0 +1,84 @@
+.wrapper {
+  margin: 0 auto;
+  background-color: #f1c6b4;
+  max-width: 1220px; }
+
+*[class*="lg"] {
+  float: left;
+  text-align: center; }
+
+.lg1 {
+  width: 5.5%; }
+
+.lg2 {
+  width: 14%; }
+
+.lg3 {
+  width: 22.5%; }
+
+.lg4 {
+  width: 31%; }
+
+.lg5 {
+  width: 39.5%; }
+
+.lg6 {
+  width: 48%; }
+
+.lg7 {
+  width: 56.5%; }
+
+.lg8 {
+  width: 65%; }
+
+.lg9 {
+  width: 73.5%; }
+
+.lg10 {
+  width: 82%; }
+
+.lg11 {
+  width: 90.5%; }
+
+.lg12 {
+  width: 99%;
+  margin: 0; }
+
+.lg1 {
+  width: 8%; }
+
+.lg2 {
+  width: 16%; }
+
+.lg3 {
+  width: 24%; }
+
+.lg4 {
+  width: 32%; }
+
+.lg5 {
+  width: 40%; }
+
+.lg6 {
+  width: 48%; }
+
+.lg7 {
+  width: 56%; }
+
+.lg8 {
+  width: 64%; }
+
+.lg9 {
+  width: 72%; }
+
+.lg10 {
+  width: 80%; }
+
+.lg11 {
+  width: 88%; }
+
+.lg12 {
+  width: 96%;
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

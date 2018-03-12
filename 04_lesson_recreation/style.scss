@@ -1,0 +1,45 @@
+body{
+  background: url("mountains.png") no-repeat;
+  background-size: cover;
+  font-family: Arial;
+}
+nav{
+  ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    li{
+      float: left;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      opacity: .8;
+      background-color: #f1e787;
+      font-size: 20px;
+      a{
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      a:hover{background: cornflowerblue}
+      ul{
+        li{
+          display: none;
+          ul{
+            left: 100%;
+            top: -40px;
+            li{
+              display: none!important;
+            }
+          }
+        }
+        li:hover ul li{
+          display:block!important;
+        }
+      }
+    }
+    li:hover ul li{display:block;}
+  }
+}

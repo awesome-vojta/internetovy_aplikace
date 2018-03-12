@@ -1,0 +1,44 @@
+body{
+/*Image, single image, over whole browser, font*/
+    background: url("mountains.png") no-repeat;
+    background-size: cover;
+    font-family: Arial;
+}
+ul {
+/*No margin, no padding-this stacks it, list-style: none-removes bullets*/
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    /*Items in unordered list*/
+    /*First, make sure our text floats to the LEFT!, aligns to the left*/
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: gray;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+ul li a {
+/*Link style: no underline, white color, display as block*/
+    text-decoration: none;
+    color:white;
+    display: block;
+    /*if ther is no disp: block, hover goes just around the text*/
+}
+ul li a:hover {
+    background-color: green;
+}
+ul li ul li {
+/*Targeting lowest items*/
+    display: none
+}
+ul li:hover ul li {
+/*Targeting Home, Contact, ... .hover()*/
+/*Once it happens, change property of lowest items*/
+    display: block;
+}
